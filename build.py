@@ -32,8 +32,10 @@ ALERTS = [
     ('Amazon Pay: Rs X was paid on Amazon.in (subject)', '^' + A + r' was paid on (Amazon)\.in', 'UPI', 1, 2, None),
     ('Amazon Pay: Your payment of ₹ X to MERCHANT was successful (subject)', r'^Your payment of ' + A + r' to ([^¶]+?) was successful', 'UPI', 1, 2, None),
     ('Amazon Pay recharge or bill: Paid to BILLER ... Paid Amount ₹X', r'is successful\. ?Paid to (.+?) Amount:? ?(?:₹|Rs\.?) ?[\d,.]+.{0,60}?Paid Amount:? ?' + A, 'UPI', 2, 1, None),
+    ('Amazon Pay: Your payment to MERCHANT was Approved (subject), amount in the body', r'^Your payment to ([^¶]+?) was Approved ¶.{0,200}?₹ ?' + N, 'UPI', 2, 1, None),
+    ('Amazon Pay FASTag toll', r'toll payment of ' + A + r' at (Toll gate .+?) was successful', 'UPI', 1, 2, None),
     ('FamApp', r'You have successfully paid ' + A + r' to (.+?) at \d', 'UPI', 1, 2, None),
-    ('Razorpay customer receipt: Payment successful for MERCHANT (subject), ₹ X Paid Successfully', r'^Payment successful for ([^¶]+?) ¶.{0,300}?₹ ?' + N + r' Paid Successfully', 'UPI', 2, 1, None),
+    ('Razorpay customer receipt: Payment successful for MERCHANT (subject), ₹ X Paid Successfully', r'^Payment successful for ([^¶]+?) ¶.{0,300}?₹ ?([\d,]+)(?: ?\.\d{1,2})? Paid Successfully', 'UPI', 2, 1, None),
     ('HDFC BillPay via BillDesk', r'Your (.+?) bill of ' + A + r' for .{0,80}? has been processed successfully', 'Bank', 2, 1, None),
     # ---- Cards
     ('HDFC card: debited from your ... Card ending N towards/at MERCHANT on date', A + r' (?:has been|is) debited from your [^.@]{0,50}?Card[^.@]{0,30}? (?:towards|at) (.+?),? on \d', 'Card', 1, 2, None),
@@ -82,7 +84,7 @@ IGNORE = [
 ]
 
 # Payment apps. Their mail is read like a bank alert: who was paid, and how much.
-APPS = ['phonepe.com', 'paytm.com', 'paytmbank.com', 'amazonpay.in', 'famapp.in', 'razorpay.com', 'hdfcbankbillpay@billdesk.in']
+APPS = ['phonepe.com', 'paytm.com', 'paytmbank.com', 'amazonpay.in', 'payments-messages@amazon.in', 'famapp.in', 'razorpay.com', 'hdfcbankbillpay@billdesk.in']
 
 # Subjects that are never a payment: statements, reminders, failures.
 IGNORE_SUBJECTS = [
@@ -95,7 +97,7 @@ IGNORE_SUBJECTS = [
     r'\bcredit card bill payment was successful\b',
 ]
 
-TOTAL_LABELS = [r'\bnet payment\b', r'\btotal amount is\b', r'\breceipt amount\b', r'\btotal amount paid\b']
+TOTAL_LABELS = [r'\bnet payment\b', r'\bnet paid\b', r'\bfinal total\b', r'\bamount to be paid\b', r'\bselected price\b', r'\btotal bill\b', r'\btotal charge\b', r'\bpaid online\b', r'\btotal amount is\b', r'\breceipt amount\b', r'\btotal amount paid\b']
 
 DOMAINS = [
     # HDFC, ICICI, Axis
@@ -113,7 +115,7 @@ DOMAINS = [
     'getonecard.app', 'slice.bank.in', 'sliceit.com', 'jupiter.money', 'equitas.bank.in', 'csb.bank.in',
 ]
 
-SUBJECT_WORDS = ['txn', 'transaction', 'debited', 'debit', 'spent', 'UPI', 'alert', 'payment', 'paid', 'sent', 'purchase', 'used', 'update', 'NEFT', 'RTGS', 'IMPS', 'notification', 'swiped', 'successful', 'recharge']
+SUBJECT_WORDS = ['approved', 'toll', 'txn', 'transaction', 'debited', 'debit', 'spent', 'UPI', 'alert', 'payment', 'paid', 'sent', 'purchase', 'used', 'update', 'NEFT', 'RTGS', 'IMPS', 'notification', 'swiped', 'successful', 'recharge']
 
 path = 'rules.json' if os.path.exists('rules.json') else 'rules/rules.json'
 pack = json.load(open(path))
@@ -128,6 +130,8 @@ pack['ignoreSubjects'] = IGNORE_SUBJECTS
 pack['totalLabels'] = TOTAL_LABELS
 if os.path.exists('.scratch/merchants.json'):
     pack['merchants'] = json.load(open('.scratch/merchants.json'))
+if os.path.exists('.scratch/subjectWords.json'):
+    pack['subjectWords'] = json.load(open('.scratch/subjectWords.json'))
 if len(sys.argv) > 1:
     pack['version'] = int(sys.argv[1])
 

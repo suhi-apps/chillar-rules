@@ -45,6 +45,31 @@ Findings that shaped the rules:
 - **Services billed in dollars are not counted.** A dollar invoice can carry one rupee figure (the tax, converted), which must not be read as the charge.
 - **PhonePe, Paytm, Amazon Pay, FamApp, Razorpay and HDFC BillPay** are read like bank alerts. When the bank also reports the same payment, the two are merged. Card bill payments, loan repayments and wallet top-ups are recorded as transfers and left out of the totals.
 
+## Merchant receipts
+
+Real emails quoted in public repositories and complaint sites; each is a case in `__tests__/merchant-layouts-test.ts`. "Old" means the sample predates 2021 and the current email may differ.
+
+| Platform | Evidence | Source |
+|---|---|---|
+| Swiggy, Instamart | real emails, 2026 | github.com/pal3dreamer/CraveMate, kevivt/spendsense, theerthalavenkatesh960-netizen/gooddays |
+| Zomato | real emails, 2024–2026 | github.com/nikhilx/zomato-spend-analyzer, Akshat293/extractEml |
+| Flipkart | real email, 2026 | gooddays; rakesh-singh-dev/orderhub-backend-api |
+| Myntra, H&M, Zara | real emails, 2024–2025 | github.com/devansh23/vera_logic |
+| AJIO | real email, 2026 | github.com/dhruvsarohaa/Sentinel-Mail-updated |
+| Amazon.in, Amazon Pay | real emails, 2026 | gooddays tests; syedateebulislam/openboard |
+| Uber | real receipts, 2023–2026 | huggingface.co/datasets/ankur-bohra/automatic-reimbursement-tool-demo-incorrect; openboard |
+| Rapido | three parsers and an inbox dump | github.com/sushil-kamble/uber-receipts-dashboard and others |
+| IRCTC | real email, 2026 | github.com/sankarsh98/family-utility-app |
+| BookMyShow | real email, 2026 | gooddays |
+| MakeMyTrip (bus) | real email, 2026 | github.com/rishusatyam/email-scrap |
+| Domino's | two parsers; old pastes | rsingh-arenema/order-summary-backend; consumercomplaints.in |
+| Ola, Cleartrip, IndiGo | old | github.com/Purva96/PRA; pastebin; KDE/kitinerary |
+| Pizza Hut, KFC, BigBasket, Netmeds, Tata 1mg | old pastes | consumercomplaints.in |
+
+What these showed that the reader had to learn: totals on the line after their label; all labels listed before all amounts (IRCTC); several labelled amounts on one row (Domino's); the older rupee sign `₨` (Flipkart); the currency after the number (IndiGo); "Net Paid" and "Amount to be paid" outranking a "Total" row (Myntra, Pizza Hut); a "Fare adjustment" row that is not a total (Uber); and a bare "615.0" with no currency (MakeMyTrip).
+
+Nothing reliable was found for Blinkit, Zepto's own receipts (some arrive as a Razorpay payment mail, which is read), JioMart, PharmEasy, Nykaa, Meesho, Tata CLiQ, Croma, Lenskart, Decathlon, Goibibo, ixigo, redBus, most airlines and hotels, PVR INOX, Namma Yatri, or for cancellation and refund subjects on any platform.
+
 ## Not covered yet
 
 No email sample could be found for these, so they are read only if their wording happens to match another bank's: American Express India (sender known, body not), AU Small Finance Bank, Standard Chartered, Bank of Baroda accounts, PNB, IDBI, DBS, Paytm Payments Bank, Airtel Payments Bank, Fi. SBI savings accounts have only the debit-card table. ATM withdrawals, foreign-currency card spends and wallet top-ups are deliberately not counted.
