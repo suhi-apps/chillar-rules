@@ -2,7 +2,7 @@
 
 Rules the Chillar app downloads to recognise receipt and bank alert emails. This file holds sender domains and text patterns only; it contains no user data and the app sends nothing when it fetches it.
 
-`rules.json` is downloaded by the app (at most every six hours, and on demand from More → Reading health). It only adds to the rules built into the app, so a receipt layout that changes can be fixed without a store release. It is data: the app never runs anything from it.
+`rules.json` is built into the app as its starting rules, and is also downloaded by the app (at most every six hours, and on demand from More → Reading health). A downloaded copy replaces the built-in one when its `version` is higher, so a receipt layout that changes can be fixed without a store release. It is data: the app never runs anything from it.
 
 To ship a fix, edit the file, **raise `version`**, and publish. When a phone sees a new version it re-reads the emails it could not read before (up to 300, from the last 120 days).
 
@@ -17,6 +17,7 @@ To ship a fix, edit the file, **raise `version`**, and publish. When a phone see
   ],
   "subjectWords": ["settled"],                    // extra words that make a subject worth fetching
   "totalLabels": ["here is what it came to"],     // patterns for the label of the amount paid
+  "paidSentences": ["received a payment of\\s*Rs\\.?\\s*([\\d,.]+)"],  // sentences stating what was paid; group 1 is the amount
   "ignoreSubjects": ["^your weekly summary"],     // subjects that are never a payment
   "bankDomains": ["newbank.in"],
   "bankSubjectWords": ["debit"],
