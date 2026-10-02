@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "merchants": [
     {"id": "swiggy", "name": "Swiggy", "category": "Food delivery", "domains": ["swiggy.in", "swiggy.com"], "memberships": ["Swiggy One"], "variants": [{"match": "instamart", "id": "instamart"}]},
     {"id": "zomato", "name": "Zomato", "category": "Food delivery", "domains": ["zomato.com"], "memberships": ["Zomato Gold"]},
@@ -126,6 +126,7 @@
     {"note": "ICICI credit card: used for a transaction of X on date. Info: MERCHANT", "re": "Card \\S+ has been used for a transaction of (?:Rs\\.?|INR|₹) ?(?:INR ?)?([\\d,]*\\.?\\d+) on [^.]{0,40}?\\. Info: (.{1,80}?)(?:\\. |\\.?$)", "via": "Card", "amount": 1, "payee": 2},
     {"note": "ICICI, HSBC: card used for (a transaction of) X at / for payment to MERCHANT on date", "re": "card[^.]{0,40}? ?(?:has been|was) used for (?:a transaction of )?(?:Rs\\.?|INR|₹) ?(?:INR ?)?([\\d,]*\\.?\\d+) (?:for payment to|at) (.{1,80}?) on \\d", "via": "Card", "amount": 1, "payee": 2},
     {"note": "ICICI standing instruction on a debit card", "re": "successfully processed your payment of (?:Rs\\.?|INR|₹) ?(?:INR ?)?([\\d,]*\\.?\\d+) towards (.{1,80}?), with Standing Instruction", "via": "Card", "amount": 1, "payee": 2},
+    {"note": "Axis debit card purchase: debited from your A/c ... at PUR/MERCHANT/ref/ref", "re": "(?:Rs\\.?|INR|₹) ?(?:INR ?)?([\\d,]*\\.?\\d+) has been debited from your A/c no\\. \\S+ on \\S+ [\\d:]+ at (?:PUR/)?(.{1,80}?)(?:/\\d+)*\\. Available", "via": "Card", "amount": 1, "payee": 2},
     {"note": "ICICI debit card purchase", "re": "A purchase of (?:Rs\\.?|INR|₹) ?(?:INR ?)?([\\d,]*\\.?\\d+) has been made using your Debit Card[^.]{0,60}?\\. Info: (.{1,80}?)\\.(?: |$)", "via": "Card", "amount": 1, "payee": 2},
     {"note": "Axis credit card summary table", "re": "Transaction Amount: ?(?:Rs\\.?|INR|₹) ?(?:INR ?)?([\\d,]*\\.?\\d+) Merchant Name: ?(.{1,80}?) Axis Bank Credit Card No", "via": "Card", "amount": 1, "payee": 2},
     {"note": "SBI Card, IDFC, Yes Bank, Equitas: X spent on your ... Card ... at MERCHANT on date", "re": "(?:Rs\\.?|INR|₹) ?(?:INR ?)?([\\d,]*\\.?\\d+) (?:has been |was )?spent on (?:your )?[^.]{0,50}?Card[^.]{0,30}? at (.{1,80}?) on \\d", "via": "Card", "amount": 1, "payee": 2},

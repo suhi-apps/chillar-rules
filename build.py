@@ -46,6 +46,7 @@ ALERTS = [
     ('ICICI credit card: used for a transaction of X on date. Info: MERCHANT', r'Card \S+ has been used for a transaction of ' + A + r' on [^.]{0,40}?\. Info: (.+?)(?:\. |\.?$)', 'Card', 1, 2, None),
     ('ICICI, HSBC: card used for (a transaction of) X at / for payment to MERCHANT on date', r'card[^.]{0,40}? ?(?:has been|was) used for (?:a transaction of )?' + A + r' (?:for payment to|at) (.+?) on \d', 'Card', 1, 2, None),
     ('ICICI standing instruction on a debit card', r'successfully processed your payment of ' + A + r' towards (.+?), with Standing Instruction', 'Card', 1, 2, None),
+    ('Axis debit card purchase: debited from your A/c ... at PUR/MERCHANT/ref/ref', A + r' has been debited from your A/c no\. \S+ on \S+ [\d:]+ at (?:PUR/)?(.+?)(?:/\d+)*\. Available', 'Card', 1, 2, None),
     ('ICICI debit card purchase', r'A purchase of ' + A + r' has been made using your Debit Card[^.]{0,60}?\. Info: (.+?)\.(?: |$)', 'Card', 1, 2, None),
     ('Axis credit card summary table', r'Transaction Amount: ?' + A + r' Merchant Name: ?(.+?) Axis Bank Credit Card No', 'Card', 1, 2, None),
     ('SBI Card, IDFC, Yes Bank, Equitas: X spent on your ... Card ... at MERCHANT on date', A + r' (?:has been |was )?spent on (?:your )?[^.]{0,50}?Card[^.]{0,30}? at (.+?) on \d', 'Card', 1, 2, None),
