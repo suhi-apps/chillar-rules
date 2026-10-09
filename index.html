@@ -237,6 +237,22 @@
     .chip.c3 { left: 2%; }
     .intro { font-size: 17px; }
   }
+
+  /* Floating cards on feature screenshots */
+  .shot .chip.p1 { left: max(0px, calc(50% - 230px)); top: 32%; }
+  .shot .chip.p2 { right: max(0px, calc(50% - 230px)); bottom: 18%; animation-delay: -3s; }
+  .chip.ok i { background: rgba(142,217,195,.18); }
+  .chip.ok i svg { stroke: var(--mint); }
+
+  /* Privacy promise band */
+  .promise { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .promise div { border: 1px solid rgba(142,217,195,.25); background: rgba(142,217,195,.06); border-radius: 22px; padding: 22px 22px 24px; }
+  .promise i { width: 40px; height: 40px; border-radius: 12px; background: rgba(142,217,195,.16); display: grid; place-items: center; }
+  .promise i svg { width: 20px; height: 20px; stroke: var(--mint); }
+  .promise b { display: block; font-size: 19px; margin: 14px 0 4px; letter-spacing: -.2px; }
+  .promise span { color: var(--muted); font-size: 15px; line-height: 1.45; }
+  @media (max-width: 960px) { .promise { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 480px) { .shot .chip.p1 { left: 0; } .shot .chip.p2 { right: 0; } }
 </style>
 </head>
 <body>
@@ -282,6 +298,12 @@
   </section>
 </div>
 
+<section id="promise" class="sec-line" style="padding-block:56px" aria-label="Privacy promise">
+  <div class="wrap">
+    <div class="promise"><div class="reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M3 3l18 18"/></svg></i><b>No servers</b><span>Everything is read and stored on your phone. Nothing is uploaded.</span></div><div class="reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/><path d="M3 3l18 18"/></svg></i><b>No account</b><span>No sign-up, no password. Just link your Gmail.</span></div><div class="reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></i><b>Read-only Gmail</b><span>Chillar can't send, delete or change your mail.</span></div><div class="reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></i><b>No ads</b><span>No advertising, no analytics, no tracking.</span></div></div>
+  </div>
+</section>
+
 <section id="how" class="sec-line">
   <div class="wrap">
     <div class="head-center">
@@ -306,7 +328,7 @@
     </div>
 
     <div class="feature">
-      <div class="shot reveal"><img src="site/1-home.jpg" alt="Home screen with the month's total, spending by category and top platforms" loading="lazy" width="600" height="1200"></div>
+      <div class="shot reveal"><img src="site/1-home.jpg" alt="Home screen with the month's total, spending by category and top platforms" loading="lazy" width="600" height="1200"><div class="chip p1" aria-hidden="true"><i><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></i><div><b>Top platform</b><span>Shoe store</span></div><em>₹1,899</em></div><div class="chip p2 ok" aria-hidden="true"><i><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></i><div><b>Read-only Gmail</b><span>Can't send or delete</span></div></div></div>
       <div class="reveal" style="--d:.08s">
         <div class="kicker">Home</div>
         <h3>This month at a glance.</h3>
@@ -320,7 +342,7 @@
     </div>
 
     <div class="feature flip">
-      <div class="shot reveal"><img src="site/2-activity.jpg" alt="Activity screen with a calendar showing what was spent each day" loading="lazy" width="600" height="1200"></div>
+      <div class="shot reveal"><img src="site/2-activity.jpg" alt="Activity screen with a calendar showing what was spent each day" loading="lazy" width="600" height="1200"><div class="chip p1" aria-hidden="true"><i><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></i><div><b>Wed, 7 Oct</b><span>Busiest day</span></div><em>₹1,899</em></div><div class="chip p2 ok" aria-hidden="true"><i><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/><path d="M3 3l18 18"/></svg></i><div><b>No account</b><span>No sign-up, no password</span></div></div></div>
       <div class="reveal" style="--d:.08s">
         <div class="kicker">Activity</div>
         <h3>Every day, on a calendar.</h3>
@@ -334,7 +356,7 @@
     </div>
 
     <div class="feature">
-      <div class="shot reveal"><img src="site/3-insights.jpg" alt="Insights screen with fees, late-night orders, weekend spending, budgets and challenges" loading="lazy" width="600" height="1200"></div>
+      <div class="shot reveal"><img src="site/3-insights.jpg" alt="Insights screen with fees, late-night orders, weekend spending, budgets and challenges" loading="lazy" width="600" height="1200"><div class="chip p1" aria-hidden="true"><i><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg></i><div><b>Late-night orders</b><span>1 this month</span></div></div><div class="chip p2 ok" aria-hidden="true"><i><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></i><div><b>No ads</b><span>No tracking either</span></div></div></div>
       <div class="reveal" style="--d:.08s">
         <div class="kicker">Insights</div>
         <h3>The patterns behind the total.</h3>
