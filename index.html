@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chillar: private online spend tracker</title>
+<meta name="description" content="Chillar reads the receipts in your Gmail on your phone and shows what you spend online. No servers, no account, no trackers.">
+<link rel="icon" href="site/favicon.png">
+<link rel="apple-touch-icon" href="site/apple-touch-icon.png">
+<meta property="og:title" content="Chillar: private online spend tracker">
+<meta property="og:description" content="Your spends. Your phone. Only you.">
+<meta property="og:image" content="site/icon.png">
+<style>
+  :root {
+    --bg: #0E1022; --surface: rgba(255,255,255,.05); --line: rgba(255,255,255,.12);
+    --fg: #FFFFFF; --muted: rgba(255,255,255,.68); --soft: #9AA0FF; --mint: #8ED9C3; --peri: #4C52E0;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  .glow { position: fixed; border-radius: 50%; filter: blur(140px); pointer-events: none; z-index: 0; }
+  .wrap { position: relative; z-index: 1; max-width: 1080px; margin: 0 auto; padding-inline: 20px; }
+  a { color: var(--soft); }
+  nav { display: flex; align-items: center; justify-content: space-between; padding-block: 22px; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 20px; color: var(--fg); text-decoration: none; }
+  .brand img { width: 36px; height: 36px; border-radius: 10px; }
+  nav .links { display: flex; gap: 22px; font-size: 15px; }
+  nav .links a { color: var(--muted); text-decoration: none; }
+  nav .links a:hover { color: var(--fg); }
+
+  .hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; padding-block: 48px 72px; }
+  .hero > * { min-width: 0; }
+  .kicker { font-size: 13px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--mint); }
+  h1 { font-size: clamp(44px, 7vw, 76px); line-height: 1.02; letter-spacing: -2px; margin: 14px 0 20px; text-wrap: balance; }
+  h1 span { color: var(--mint); }
+  .lede { font-size: 20px; color: var(--muted); max-width: 34ch; margin: 0 0 32px; }
+  .cta { display: inline-flex; align-items: center; gap: 12px; background: #fff; color: #11132A; font-weight: 700; text-decoration: none; padding: 16px 28px; border-radius: 999px; font-size: 17px; }
+  .cta:hover { background: var(--mint); }
+  .cta svg { width: 22px; height: 22px; }
+  .note { font-size: 14px; color: var(--muted); margin-top: 14px; }
+  .phone { width: min(330px, 80vw); margin: 0 auto; border-radius: 48px; background: #0A0A0F; padding: 10px; box-shadow: 0 0 0 1.5px var(--line), 0 40px 100px rgba(0,0,0,.55), 0 0 120px rgba(76,82,224,.35); }
+  .phone img { display: block; width: 100%; border-radius: 39px; }
+
+  section { padding-block: 64px; border-top: 1px solid var(--line); }
+  h2 { font-size: clamp(30px, 4.5vw, 44px); line-height: 1.1; letter-spacing: -1px; margin: 10px 0 14px; text-wrap: balance; }
+  .intro { color: var(--muted); max-width: 60ch; margin: 0 0 36px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 28px; }
+  .card .n { width: 40px; height: 40px; border-radius: 12px; background: rgba(142,217,195,.14); color: var(--mint); font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .card h3 { font-size: 21px; margin: 18px 0 6px; }
+  .card p { margin: 0; color: var(--muted); font-size: 16px; }
+
+  .shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; border-radius: 22px; border: 1px solid var(--line); display: block; }
+  .shots figcaption { font-size: 14px; color: var(--muted); margin-top: 10px; text-align: center; }
+
+  .nos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; }
+  .no { display: flex; gap: 16px; padding-block: 18px; border-bottom: 1px solid var(--line); }
+  .no b { display: block; }
+  .no span { color: var(--muted); font-size: 15px; }
+  .no i { flex: none; width: 28px; height: 28px; border-radius: 50%; background: rgba(142,217,195,.14); color: var(--mint); font-style: normal; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; font-size: 14px; }
+
+  .google { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 32px; display: grid; gap: 14px; }
+  .google p, .google li { color: var(--muted); }
+  .google ul { margin: 0; padding-left: 22px; display: grid; gap: 6px; }
+  .google strong { color: var(--fg); }
+
+  footer { border-top: 1px solid var(--line); padding-block: 36px 48px; display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: space-between; font-size: 14px; color: var(--muted); }
+  footer a { color: var(--muted); }
+
+  @media (max-width: 860px) {
+    .hero { grid-template-columns: 1fr; padding-block: 24px 56px; }
+    .grid3 { grid-template-columns: 1fr; }
+    .shots { grid-template-columns: repeat(2, 1fr); }
+    .nos { grid-template-columns: 1fr; }
+    nav .links a.hide-sm { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="glow" style="width:700px;height:700px;background:#3B40C8;opacity:.45;left:-260px;top:-260px"></div>
+<div class="glow" style="width:600px;height:600px;background:#2A6E62;opacity:.28;right:-240px;top:60vh"></div>
+
+<div class="wrap">
+  <nav>
+    <a class="brand" href="./"><img src="site/icon.png" alt="">Chillar</a>
+    <div class="links">
+      <a class="hide-sm" href="#how">How it works</a>
+      <a class="hide-sm" href="#privacy">Privacy</a>
+      <a href="privacy.html">Privacy policy</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <div class="kicker">Online spend tracker</div>
+      <h1>Your spends.<br>Your phone.<br><span>Only you.</span></h1>
+      <p class="lede">Chillar reads the order, ride and bill receipts in your Gmail and shows what you spend online. Everything stays on your phone.</p>
+      <a class="cta" href="https://play.google.com/store/apps/details?id=app.chillar.mobile">
+        Get it on Google Play
+      </a>
+      <p class="note">Android. iPhone coming soon.</p>
+    </div>
+    <div class="phone"><img src="site/1-home.jpg" alt="Chillar home screen showing this month's online spending by category"></div>
+  </header>
+
+  <section id="how">
+    <div class="kicker">How it works</div>
+    <h2>Your receipts, made clear.</h2>
+    <p class="intro">Most of what we spend online arrives as an email receipt. Chillar finds those receipts and adds them up for you.</p>
+    <div class="grid3">
+      <div class="card"><div class="n">1</div><h3>Link your Gmail</h3><p>Sign in with Google and allow read-only access. Chillar can't send, delete or change your mail.</p></div>
+      <div class="card"><div class="n">2</div><h3>It finds receipts</h3><p>Orders, rides, bills, subscriptions and bank payment alerts are read on your phone.</p></div>
+      <div class="card"><div class="n">3</div><h3>See every rupee</h3><p>Totals by day, category and platform, plus fees, habits and budgets.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="kicker">Inside the app</div>
+    <h2>Every spend, sorted.</h2>
+    <p class="intro">A calendar of what you spent each day, the platforms you use most, hidden delivery and platform fees, and the habits that cost you.</p>
+    <div class="shots">
+      <figure><img src="site/1-home.jpg" alt="Home screen" loading="lazy"><figcaption>This month at a glance</figcaption></figure>
+      <figure><img src="site/2-activity.jpg" alt="Activity calendar" loading="lazy"><figcaption>Day-by-day activity</figcaption></figure>
+      <figure><img src="site/3-insights.jpg" alt="Insights screen" loading="lazy"><figcaption>Habits and budgets</figcaption></figure>
+      <figure><img src="site/4-privacy.jpg" alt="Privacy centre" loading="lazy"><figcaption>Privacy centre</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <div class="kicker">Private by design</div>
+    <h2>Your data never leaves your phone.</h2>
+    <p class="intro">Chillar was built so that nobody else can see your spending, including us.</p>
+    <div class="nos">
+      <div class="no"><i>✕</i><div><b>No servers</b><span>Receipts are read and stored on your device. There is nowhere else for them to go.</span></div></div>
+      <div class="no"><i>✕</i><div><b>No account</b><span>No sign-up and no password. You only sign in to Google, to link your Gmail.</span></div></div>
+      <div class="no"><i>✕</i><div><b>No copy of your history</b><span>Your data is kept in an encrypted database on your phone and nowhere else.</span></div></div>
+      <div class="no"><i>✕</i><div><b>No ads or trackers</b><span>No advertising, no analytics, no tracking of any kind.</span></div></div>
+    </div>
+  </section>
+
+  <section id="google">
+    <div class="google">
+      <div class="kicker">How Chillar uses Google data</div>
+      <p>When you link a Gmail account, Chillar requests the <strong>read-only Gmail permission</strong> (<code>gmail.readonly</code>). It uses it only to:</p>
+      <ul>
+        <li>search your mailbox, on your phone, for order, invoice, payment, refund and subscription emails and bank payment alerts;</li>
+        <li>extract the merchant, amount, fees, items, payment method and date to show you your own spending;</li>
+        <li>show you the original email when you tap "View receipt".</li>
+      </ul>
+      <p>Your Gmail data is processed and stored only on your device. It is never sent to the developer or any third party, never used for advertising, and never read by a person. Chillar's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      <p>You can unlink an account or delete everything from inside the app at any time, and revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Full details are in the <a href="privacy.html">privacy policy</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Chillar</span>
+    <span><a href="privacy.html">Privacy policy</a> · <a href="mailto:suhi.apps@gmail.com">suhi.apps@gmail.com</a></span>
+  </footer>
+</div>
+</body>
+</html>
