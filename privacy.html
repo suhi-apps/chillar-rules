@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chillar privacy policy</title>
+<style>
+:root { color-scheme: light dark; --bg:#fff; --fg:#1b1d2a; --muted:#5b5f73; --accent:#4C52E0; --code:#f0f1f7; }
+@media (prefers-color-scheme: dark) { :root { --bg:#12131a; --fg:#e8e9f0; --muted:#a3a6b8; --accent:#8f94ff; --code:#23253a; } }
+body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+h1 { font-size:28px; line-height:1.25; margin:0 0 4px; }
+h1 + p { color:var(--muted); margin-top:0; }
+h2 { font-size:19px; margin:32px 0 8px; }
+a { color:var(--accent); overflow-wrap:anywhere; }
+code { background:var(--code); padding:1px 5px; border-radius:4px; font-size:14px; }
+li { margin:4px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>Chillar privacy policy</h1>
+<p>Last updated: 9 October 2026</p>
+<p>Chillar is an app that shows what you spend online by reading receipts in the Gmail accounts you choose to link. This policy explains what the app reads, where it is kept, and how to remove it.</p>
+<h2>The short version</h2>
+<ul>
+<li>Chillar has no servers and no user accounts. Nothing the app reads leaves your phone.</li>
+<li>The developer cannot see your email, your transactions, or anything else in the app.</li>
+<li>You can delete everything at any time from inside the app.</li>
+</ul>
+<h2>What the app reads</h2>
+<p>When you link a Gmail account, Chillar asks Google for read-only access (<code>gmail.readonly</code>). It then searches that mailbox for:</p>
+<ul>
+<li>order, invoice, payment, refund and subscription emails from known shopping, food delivery, ride and subscription services, and</li>
+<li>debit and card payment alerts from banks.</li>
+</ul>
+<p>Messages are found by sender and subject. From each matching email the app extracts the merchant, amount, fees, items, payment method and date. Chillar cannot send, delete or change mail.</p>
+<h2>Where it is kept</h2>
+<p>The extracted details are stored in an encrypted database on your phone, along with a log of each email's sender, subject and whether it could be read. The encryption key and the Google sign-in tokens are kept in the system keystore (Android Keystore / iOS Keychain). The body of an email is not stored; when you open "View receipt", the original is fetched from Gmail and shown on screen.</p>
+<h2>What is shared</h2>
+<p>Nothing, unless you choose to send it. Chillar does not send your data to the developer or to any third party, contains no advertising, and contains no analytics or tracking.</p>
+<p>The app makes two kinds of network connection: to Google, to sign you in and to read your mail; and to GitHub, to download two small public files, the reading rules (sender names and text patterns for recognising receipts) and the list of daily nudges. These downloads send nothing about you or your mail.</p>
+<p>A file leaves the app only when you make one and pick where to send it:</p>
+<ul>
+<li><strong>Export CSV</strong>: your transactions.</li>
+<li><strong>Send feedback</strong> (More → Send feedback): opens a message in your own mail app or the share sheet (for example WhatsApp), addressed to suhi.apps@gmail.com. It contains what you write plus the app version, phone type, reading-rules version and how many Gmail accounts are linked. Nothing is sent until you send it from that app.</li>
+<li><strong>Share reading log</strong> (More → Reading health): for helping the developer fix receipts the app could not read. It contains how many emails were read per platform and the text of up to 30 emails that were not, with names, addresses, phone numbers, email addresses and order, card and account numbers masked. Items and amounts are kept. Masking is automatic and may miss details, so the app shows you the whole file before you share it. If you send it to the developer, it is used only to fix reading problems.</li>
+</ul>
+<h2>Google user data</h2>
+<p>Chillar's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Gmail data is used only to show you your own spending inside the app. It is not transferred to anyone, not used for advertising, and not read by any person.</p>
+<h2>Notifications</h2>
+<p>If you turn on reminders, the app schedules them on the phone itself. No push service is involved.</p>
+<h2>Keeping and deleting data</h2>
+<p>Data stays on your phone until you remove it. You can:</p>
+<ul>
+<li>unlink a single Gmail account (More → the account), which removes its transactions and revokes its access,</li>
+<li>pause all reading (More → Privacy centre), or</li>
+<li>delete everything (More → Privacy centre → Delete everything), which unlinks every account and erases the database.</li>
+</ul>
+<p>Uninstalling the app also removes all of its data. You can revoke Chillar's access at any time at <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</p>
+<h2>Children</h2>
+<p>Chillar is not directed at children under 13 and does not knowingly collect data from them.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted at this address with a new date.</p>
+<h2>Contact</h2>
+<p>suhi.apps@gmail.com</p>
+</main>
+</body>
+</html>
