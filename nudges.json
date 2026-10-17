@@ -1,206 +1,1473 @@
 {
-  "version": 1,
+  "version": 2,
   "nudges": [
-    {"title":"Your chillar called","body":"It wants to know where it went. Two minutes?"},
-    {"title":"Quick peek?","body":"Today’s spending is waiting. It’s shy, but it’s there."},
-    {"title":"Chai and a check-in","body":"Sip, scroll, see where the money went. In that order."},
-    {"title":"Delivery partner fees say hi","body":"They’ve been quietly adding up. Want to meet them?"},
-    {"title":"A small look, a big difference","body":"Two minutes in Chillar today beats a surprise next month."},
-    {"title":"Your wallet sent a postcard","body":"“Having a busy week. Wish you were watching.”"},
-    {"title":"Nothing urgent","body":"Just your daily reminder that you’re the boss of your money."},
-    {"title":"Plot twist","body":"The small orders are the main characters. See for yourself."},
-    {"title":"Hello from your receipts","body":"They’ve been sorted, tallied and lined up for you."},
-    {"title":"Budget check, no judgement","body":"Just numbers, not opinions. Take a look."},
-    {"title":"One tap of clarity","body":"Open Chillar and know exactly where the week stands."},
-    {"title":"Did someone say platform fee?","body":"We did. Every single time. Come see the total."},
-    {"title":"Today’s mood: informed","body":"A quick look at your spending is a nice way to get there."},
-    {"title":"Your future self says thanks","body":"For the two minutes you’re about to spend in Chillar."},
-    {"title":"Small spends, big story","body":"The ₹-sized details are in. Read the plot."},
-    {"title":"Psst, it’s not a lecture","body":"Just a calm look at where money went this week."},
-    {"title":"Late-night cravings report","body":"Curious how often the midnight biryani wins? Find out."},
-    {"title":"Weekend recap ready","body":"See how the weekend treated your wallet."},
-    {"title":"Hey, quick one","body":"Your spending calendar has a few new dots."},
-    {"title":"Subscriptions roll call","body":"Everyone still earning their keep? Take attendance."},
-    {"title":"Calm money moment","body":"No alarms, no red ink. Just a look."},
-    {"title":"Loose change, tight grip","body":"Keep an eye on the little ones. They travel in groups."},
-    {"title":"Fun fact","body":"People who check their spending weekly spend less. Weekly starts today."},
-    {"title":"The fee leak is a leak","body":"Small drips, steady pace. See how much."},
-    {"title":"Ready when you are","body":"Chillar has done the reading. You just do the looking."},
-    {"title":"Quick commerce, quick check","body":"Ten-minute delivery deserves a ten-second review."},
-    {"title":"Money check, minus the math","body":"We added it all up so you don’t have to."},
-    {"title":"Your inbox did the homework","body":"Chillar turned it into a neat page. Have a look."},
-    {"title":"Today’s tiny habit","body":"Open, glance, close. That’s the whole habit."},
-    {"title":"Spot the pattern","body":"Which day of the week orders the most? It’s in Insights."},
-    {"title":"Gentle nudge","body":"Not a push. Just a nudge. Your spending is up to date."},
-    {"title":"No spoilers","body":"But this month’s top platform might surprise you."},
-    {"title":"Hello, money-wise human","body":"Keep the streak of knowing what you spend."},
-    {"title":"A minute for your money","body":"That’s all it takes to stay on top of things."},
-    {"title":"The month in motion","body":"See how it’s going compared to your usual."},
-    {"title":"Snack-sized check-in","body":"Like a samosa: quick, satisfying, slightly addictive."},
-    {"title":"Who ordered that?","body":"Probably you. Chillar has the receipts."},
-    {"title":"Let’s keep it chill","body":"A relaxed look at spending keeps surprises away."},
-    {"title":"Peekaboo","body":"Your budget is hiding in Insights. Go find it."},
-    {"title":"Your money diary","body":"Today’s page is written. Want to read it?"},
-    {"title":"Small wins count","body":"A no-order day is a win. Check if today is one."},
-    {"title":"The calendar has news","body":"Some days are busier than you’d guess."},
-    {"title":"Chillar, reporting for duty","body":"All receipts read, all totals ready."},
-    {"title":"Five-second finance","body":"Open Chillar, see the number, carry on. Done."},
-    {"title":"Kind reminder","body":"Knowing beats guessing. Have a quick look."},
-    {"title":"Hot take","body":"Delivery fees are just tips your wallet didn’t agree to. Check yours."},
-    {"title":"A clean slate","body":"New day, same calm view of your money."},
-    {"title":"Curious?","body":"See which platform you opened most this month."},
-    {"title":"The little things","body":"They add up. Chillar adds them up for you."},
-    {"title":"Brain break","body":"Swap one scroll for a spending scroll. Two minutes."},
-    {"title":"Morning person or night owl?","body":"Your order times know. See them in Insights."},
-    {"title":"Steady hands","body":"People who check often decide better. Check in today."},
-    {"title":"Fresh numbers","body":"Open Chillar to read today’s mail and update your totals."},
-    {"title":"Let’s not be strangers","body":"Your spending misses you. Say hi."},
-    {"title":"Free advice","body":"Look before you leap into the next cart."},
-    {"title":"Chillar tip","body":"Tap any day in the calendar to see what happened."},
-    {"title":"Chillar tip","body":"Set a budget for one category. Just one. See how it feels."},
-    {"title":"Chillar tip","body":"Try a no-order weekend challenge. It’s in Insights."},
-    {"title":"Chillar tip","body":"Exclude a payment from totals if it wasn’t really spending."},
-    {"title":"Chillar tip","body":"Make your own category. Pets, gifts, gadgets, anything."},
-    {"title":"Chillar tip","body":"Mark a wrong payment as “not mine” and it never comes back."},
-    {"title":"Chillar tip","body":"Add cash spends by hand with the + button."},
-    {"title":"Chillar tip","body":"Search Activity for any amount or shop name."},
-    {"title":"Chillar tip","body":"Turn on renewal reminders so no subscription sneaks up on you."},
-    {"title":"Chillar tip","body":"Move several payments to a new category at once. Open a category, tap Edit."},
-    {"title":"Your cart is not a diary","body":"But Chillar is. Have a read."},
-    {"title":"Small cart, big fee?","body":"Find out which orders paid the most in fees."},
-    {"title":"Think of it as a mirror","body":"A friendly one. Take a quick look."},
-    {"title":"Paisa check","body":"Every paisa has a story. Read today’s."},
-    {"title":"Hello again","body":"Same calm numbers, freshly updated."},
-    {"title":"Time for a stretch","body":"Stretch your legs, then stretch your budget. Open Chillar."},
-    {"title":"Spend smarter, not harder","body":"A two-minute look is the smart part."},
-    {"title":"Today’s fortune","body":"You will know exactly where your money went. Open to claim."},
-    {"title":"Your subscriptions are subscribing","body":"To your attention. Have a look at them."},
-    {"title":"Weekday warrior","body":"See how this week compares to last."},
-    {"title":"Gentle as a feather","body":"No guilt, just a quick money check."},
-    {"title":"Did you know?","body":"Packaging and handling fees can rival delivery fees. See yours."},
-    {"title":"Did you know?","body":"Your busiest ordering hour is in Insights. Spoiler: it’s probably dinner."},
-    {"title":"Did you know?","body":"Refunds that never arrived show up in Insights. Worth a look."},
-    {"title":"Did you know?","body":"Chillar reads your mail on this phone only. Nobody else sees it."},
-    {"title":"Did you know?","body":"One bigger order often costs less in fees than three small ones."},
-    {"title":"A tidy little summary","body":"Your week, sorted by category. Open to see."},
-    {"title":"Fewer surprises ahead","body":"Upcoming renewals are listed. Glance at them."},
-    {"title":"Treat yourself","body":"To knowing where the treats went."},
-    {"title":"The sweet spot","body":"Enjoy the biryani, know the bill. Chillar does the second part."},
-    {"title":"Hey you","body":"Yes, you with the excellent taste in food. Check the tally."},
-    {"title":"Money, but make it calm","body":"No charts screaming at you. Promise."},
-    {"title":"Ping!","body":"That’s it. That’s the nudge. Open Chillar if you like."},
-    {"title":"Weekly reset","body":"Monday is a great day to look at last week."},
-    {"title":"Friday feeling","body":"Before the weekend orders begin, a quick look?"},
-    {"title":"Sunday stocktake","body":"See how the week went before it ends."},
-    {"title":"Midweek moment","body":"Halfway through the week. How’s the spending?"},
-    {"title":"Month-end mood","body":"Check the month before it checks you."},
-    {"title":"New month energy","body":"Fresh month, fresh totals. Start strong."},
-    {"title":"All caught up?","body":"Open Chillar to read new receipts."},
-    {"title":"Receipts in, clarity out","body":"That’s the Chillar deal. Come see."},
-    {"title":"Gratitude moment","body":"Thank your past self for every order you didn’t place."},
-    {"title":"Zen and the art of spending","body":"Breathe in. Open Chillar. Breathe out."},
-    {"title":"Low effort, high reward","body":"Possibly the easiest money habit there is."},
-    {"title":"Hey, money detective","body":"There’s a mystery fee waiting to be solved."},
-    {"title":"Your money has a map","body":"Open the calendar and follow the dots."},
-    {"title":"Spending, simplified","body":"One screen, one number, one calm minute."},
-    {"title":"Keep the streak alive","body":"Checking in daily is the best habit you can build in a minute."},
-    {"title":"This one is short","body":"Like the time it takes to check Chillar."},
-    {"title":"A nudge, not a nag","body":"We promise to keep it that way."},
-    {"title":"Ten seconds of truth","body":"That’s all Home needs to tell you how you’re doing."},
-    {"title":"It’s a good day to know","body":"Where your money went. Just saying."},
-    {"title":"Little reminder","body":"You set Chillar up for a reason. It’s ready."},
-    {"title":"Plan the weekend","body":"Look back first, then plan ahead."},
-    {"title":"The smartest thing you’ll do today","body":"Maybe. It takes two minutes. Open Chillar."},
-    {"title":"A friendly check-in","body":"How are the budgets holding up?"},
-    {"title":"Just wondering","body":"How many orders this week? Chillar knows."},
-    {"title":"Habit stack","body":"Morning chai + Chillar check. Perfect pair."},
-    {"title":"Evening wind-down","body":"Close the day by closing the loop on spending."},
-    {"title":"Pocket-sized insight","body":"One fact about your spending, waiting inside."},
-    {"title":"You’re doing great","body":"Want to see the proof? Open Chillar."},
-    {"title":"Keep calm and check Chillar","body":"We had to say it once."},
-    {"title":"Wallet weather","body":"Today’s forecast: clear skies, if you take a look."},
-    {"title":"A small detour","body":"Before your next order, a quick look at this one."},
-    {"title":"The scoreboard is updated","body":"Spending vs your usual month. Who’s winning?"},
-    {"title":"Swipe less, know more","body":"Two minutes in Chillar beats ten in a shopping app."},
-    {"title":"Cart wisdom","body":"The best deal is sometimes the order you skip."},
-    {"title":"Cart wisdom","body":"Bundle it up. Fewer orders, fewer fees."},
-    {"title":"Cart wisdom","body":"Free delivery is only free if you needed the rest of the cart."},
-    {"title":"Cart wisdom","body":"Hungry shopping is expensive shopping. Snack first."},
-    {"title":"Cart wisdom","body":"If it can wait a day, it can probably wait a week."},
-    {"title":"Rhythm check","body":"Same time tomorrow? A quick look a day keeps the overspend away."},
-    {"title":"An apple a day","body":"Keeps the doctor away. A Chillar a day keeps the overspend away."},
-    {"title":"Hello, CFO","body":"Chief Financial Officer of your own life. Quick briefing ready."},
-    {"title":"Board meeting at one","body":"Attendees: you. Agenda: one minute in Chillar."},
-    {"title":"Plain and simple","body":"Here’s your money, here’s where it went."},
-    {"title":"Not an ad","body":"Just Chillar, reminding you it exists. Hi."},
-    {"title":"Here’s a thought","body":"What would you do with this month’s fees back?"},
-    {"title":"Light on your pocket","body":"Heavy on clarity. That’s today’s check-in."},
-    {"title":"Insights, freshly baked","body":"Habits, fees, and that one expensive day."},
-    {"title":"Count your chillar","body":"Then let Chillar count the rest."},
-    {"title":"Small talk","body":"How was your day? Your spending says hi."},
-    {"title":"Trivia time","body":"Which costs more over a year: one subscription or daily delivery fees?"},
-    {"title":"One to grow on","body":"Watching small spends is how big savings start."},
-    {"title":"Before you tap “Order”","body":"Tap Chillar first. Just once."},
-    {"title":"Keep it real","body":"Real numbers, from real receipts, on your phone."},
-    {"title":"Data, but friendly","body":"No spreadsheets were harmed in the making of your totals."},
-    {"title":"A gentle tap on the shoulder","body":"Your spending summary is up to date."},
-    {"title":"Quick favour","body":"Glance at Home. That’s all. Thanks!"},
-    {"title":"A refund might be waiting","body":"Check Insights for refunds still pending."},
-    {"title":"Renewals ahead","body":"See what’s due in the coming month."},
-    {"title":"Fee watch","body":"This month’s fee total is in. Brace yourself (or don’t)."},
-    {"title":"Budget buddy","body":"Your budgets are holding up. Want to see how well?"},
-    {"title":"Challenge accepted?","body":"A no-order weekend is closer than you think."},
-    {"title":"Small steps","body":"Check, notice, adjust. Repeat tomorrow."},
-    {"title":"Hey superstar","body":"Know your numbers, own your month."},
-    {"title":"Your money’s highlight reel","body":"Top platforms, top days, top fees."},
-    {"title":"Two minutes, tops","body":"We timed it. Mostly."},
-    {"title":"Feeling curious?","body":"See what you spent on this day last month."},
-    {"title":"Slow money","body":"A calm look today keeps rushed decisions away."},
-    {"title":"Tiny audit","body":"Spot anything that isn’t yours? Mark it, and it’s gone."},
-    {"title":"Good news travels","body":"Especially when it’s a spending day that came in under usual."},
-    {"title":"Ask Chillar","body":"What did you spend on rides this month? Two taps to know."},
-    {"title":"Hello sunshine","body":"Bright day, clear numbers. Have a look."},
-    {"title":"Rainy day thinking","body":"Rainy days mean delivery days. Check the damage, kindly."},
-    {"title":"Payday approaching?","body":"A good time to see how the month went."},
-    {"title":"The quiet achiever","body":"Chillar read your receipts while you were busy."},
-    {"title":"Bite-sized update","body":"Like a momo. Small, warm, worth it."},
-    {"title":"Your spending, in one breath","body":"Open Home and read the big number."},
-    {"title":"Check before checkout","body":"Today’s total first, cart second."},
-    {"title":"Here for you","body":"No ads, no loans, no upsell. Just your numbers."},
-    {"title":"Unread receipts?","body":"Chillar handled them. Open to see what’s new."},
-    {"title":"A little nudge from Chillar","body":"Because you asked us to. Nicely."},
-    {"title":"Weekly vibe check","body":"Spending up, down or steady? One tap to find out."},
-    {"title":"Order history, decoded","body":"Categories, fees and habits, all in one place."},
-    {"title":"Make it a ritual","body":"Same time, every day, one quick look."},
-    {"title":"A penny for your thoughts","body":"Or a quick look at where the pennies went."},
-    {"title":"Count on it","body":"Chillar counted every rupee so you can relax."},
-    {"title":"Plans for tonight?","body":"Dinner in or delivery? Check the week first."},
-    {"title":"Lunch break special","body":"A quick spending check pairs well with lunch."},
-    {"title":"Know thy fees","body":"Ancient wisdom. Modern app. Open Chillar."},
-    {"title":"Steady wins","body":"Not perfect, just steady. Keep checking in."},
-    {"title":"You’ve got this","body":"Your money, your rules. Chillar just keeps score."},
-    {"title":"A quick hello","body":"Nothing to worry about. Just here if you need us."},
-    {"title":"Happy little numbers","body":"They’re all organised and waiting for you."},
-    {"title":"Spending snapshot","body":"Today, this week, this month. Pick one."},
-    {"title":"Ever wondered?","body":"Which app gets most of your money? Wonder no more."},
-    {"title":"Daily dose","body":"Of financial calm. No prescription needed."},
-    {"title":"The friendly ledger","body":"Your spending, written up neatly. Have a read."},
-    {"title":"Nudge of the day","body":"Look at one category today. Just one."},
-    {"title":"Almost the weekend","body":"Set the tone with a quick spending check."},
-    {"title":"Fresh out of your inbox","body":"New receipts may be in. Open to read them."},
-    {"title":"Smart move incoming","body":"Opening Chillar counts as one."},
-    {"title":"Make room for savings","body":"It starts with seeing what you spend."},
-    {"title":"Bonus round","body":"Check your subscriptions for one you forgot about."},
-    {"title":"All good here","body":"Chillar is up to date. Pop in when you like."},
-    {"title":"Snack attack audit","body":"Chips, chocolate, a cold drink. Quick commerce knows. So does Chillar."},
-    {"title":"Little and often","body":"Small checks, often. That’s the whole trick."},
-    {"title":"One for the road","body":"Rides add up too. See this month’s."},
-    {"title":"Inbox to insight","body":"Your receipts became a story. Read a chapter."},
-    {"title":"Clear head, clear wallet","body":"A calm look now saves a scramble later."},
-    {"title":"Shopping spree detector","body":"Any busy days lately? The calendar will tell."},
-    {"title":"Mini mission","body":"Find your most expensive day this month. Ready, go."},
-    {"title":"Spending, without the stress","body":"That’s the whole idea. Pop in."},
-    {"title":"Today’s gentle question","body":"Did every order this week feel worth it?"},
-    {"title":"See you tomorrow","body":"Same time, new nudge. Never the same one twice in a row."}
+    {
+      "title": "Your chillar called",
+      "body": "It wants to know where it went. Two minutes?"
+    },
+    {
+      "title": "Chai and a check-in",
+      "body": "Sip, scroll, see where the money went. In that order."
+    },
+    {
+      "title": "Delivery fees say hi",
+      "body": "They’ve been quietly adding up. Want to meet them?"
+    },
+    {
+      "title": "A small look, a big difference",
+      "body": "Two minutes now beats a surprise later."
+    },
+    {
+      "title": "Your wallet sent a postcard",
+      "body": "“Having an interesting time. Wish you were watching.”"
+    },
+    {
+      "title": "Nothing urgent",
+      "body": "Just your daily reminder that you’re the boss of your money."
+    },
+    {
+      "title": "Plot twist",
+      "body": "The small orders are the main characters. See for yourself."
+    },
+    {
+      "title": "Budget check, no judgement",
+      "body": "Just numbers, not opinions. Take a look."
+    },
+    {
+      "title": "Did someone say platform fee?",
+      "body": "We did. Every single time. Come see the total."
+    },
+    {
+      "title": "Today’s mood: informed",
+      "body": "A quick look at your spending is a nice way to get there."
+    },
+    {
+      "title": "Your future self says thanks",
+      "body": "For the two minutes you’re about to spend in Chillar."
+    },
+    {
+      "title": "Small spends, big story",
+      "body": "The little ₹ details make the plot. Read it."
+    },
+    {
+      "title": "Psst, it’s not a lecture",
+      "body": "Just a calm look at where money went this week."
+    },
+    {
+      "title": "Late-night cravings report",
+      "body": "Curious how often the midnight biryani wins? Find out."
+    },
+    {
+      "title": "Subscriptions roll call",
+      "body": "Everyone still earning their keep? Take attendance."
+    },
+    {
+      "title": "Calm money moment",
+      "body": "No alarms, no red ink. Just a look."
+    },
+    {
+      "title": "Loose change, tight grip",
+      "body": "Keep an eye on the little ones. They travel in groups."
+    },
+    {
+      "title": "Small drips, steady pace",
+      "body": "That’s how fees work. The Fee leak card has the total."
+    },
+    {
+      "title": "Quick commerce, quick check",
+      "body": "Ten-minute delivery deserves a ten-second review."
+    },
+    {
+      "title": "Money check, minus the math",
+      "body": "We add it all up so you don’t have to."
+    },
+    {
+      "title": "Your inbox did the homework",
+      "body": "Chillar turns it into a neat page. Have a look."
+    },
+    {
+      "title": "Today’s tiny habit",
+      "body": "Open, glance, close. That’s the whole habit."
+    },
+    {
+      "title": "Spot the pattern",
+      "body": "Which day of the week orders the most? It’s in Insights."
+    },
+    {
+      "title": "No spoilers",
+      "body": "But this month’s top platform might surprise you."
+    },
+    {
+      "title": "Snack-sized check-in",
+      "body": "Like a samosa: quick, satisfying, slightly addictive."
+    },
+    {
+      "title": "Who ordered that?",
+      "body": "Probably you. Chillar has the receipts."
+    },
+    {
+      "title": "Let’s keep it chill",
+      "body": "A relaxed look at spending keeps surprises away."
+    },
+    {
+      "title": "Peekaboo",
+      "body": "Budgets hide in Insights. Go find them."
+    },
+    {
+      "title": "Your money diary",
+      "body": "Every receipt is a line in it. Want to read a page?"
+    },
+    {
+      "title": "The calendar has news",
+      "body": "Some days are busier than you’d guess."
+    },
+    {
+      "title": "Five-second finance",
+      "body": "Open Chillar, see the number, carry on. Done."
+    },
+    {
+      "title": "Kind reminder",
+      "body": "Knowing beats guessing. Have a quick look."
+    },
+    {
+      "title": "A clean slate",
+      "body": "New day, same calm view of your money."
+    },
+    {
+      "title": "The little things",
+      "body": "They add up. Chillar adds them up for you."
+    },
+    {
+      "title": "Brain break",
+      "body": "Swap one scroll for a spending scroll. Two minutes."
+    },
+    {
+      "title": "Morning person or night owl?",
+      "body": "Your order times know. See them in Insights."
+    },
+    {
+      "title": "Look before you leap",
+      "body": "Into the next cart, that is. A quick peek first?"
+    },
+    {
+      "title": "Tap any day in the calendar",
+      "body": "It shows what happened that day. Handy for “wait, what was that?”"
+    },
+    {
+      "title": "Budget just one category",
+      "body": "Not all of them. Just one. See how it feels."
+    },
+    {
+      "title": "Fancy a no-order weekend?",
+      "body": "It’s a challenge in Insights. Start it whenever you like."
+    },
+    {
+      "title": "Not everything is spending",
+      "body": "Open a payment to leave it out of your totals, like a transfer to family."
+    },
+    {
+      "title": "Make your own category",
+      "body": "Pets, gifts, gadgets, anything. Your money, your labels."
+    },
+    {
+      "title": "Not yours? Say so.",
+      "body": "Mark a payment as “not mine” and it never comes back."
+    },
+    {
+      "title": "Paid in cash?",
+      "body": "Add it by hand with the + button. It sits with the rest."
+    },
+    {
+      "title": "Looking for one payment?",
+      "body": "Search Activity by amount or shop name."
+    },
+    {
+      "title": "Renewal reminders, on request",
+      "body": "Turn them on and no subscription sneaks up on you."
+    },
+    {
+      "title": "Recategorise in bulk",
+      "body": "Open a category, tap Edit, move several payments at once."
+    },
+    {
+      "title": "Your cart is not a diary",
+      "body": "But Chillar is. Have a read."
+    },
+    {
+      "title": "Small cart, big fee?",
+      "body": "Find out which orders paid the most in fees."
+    },
+    {
+      "title": "Think of it as a mirror",
+      "body": "A friendly one. Take a quick look."
+    },
+    {
+      "title": "Paisa check",
+      "body": "Every paisa has a story. Read today’s."
+    },
+    {
+      "title": "Today’s fortune",
+      "body": "You will know exactly where your money went. Open to claim."
+    },
+    {
+      "title": "Your subscriptions are subscribing",
+      "body": "To your attention. Have a look at them."
+    },
+    {
+      "title": "Gentle as a feather",
+      "body": "No guilt, just a quick money check."
+    },
+    {
+      "title": "Packaging fees are sneaky",
+      "body": "They can rival the delivery fee. The Fee leak card shows both."
+    },
+    {
+      "title": "Your busiest ordering hour",
+      "body": "It’s in Habits. Spoiler: it’s probably dinner."
+    },
+    {
+      "title": "Refunds that never came",
+      "body": "Pending refunds show up in Insights. Worth a look."
+    },
+    {
+      "title": "Your mail stays on this phone",
+      "body": "Chillar reads it here and nowhere else. No servers, no account."
+    },
+    {
+      "title": "Three small orders, three fees",
+      "body": "One bigger order often costs less in fees. Worth knowing."
+    },
+    {
+      "title": "A tidy little summary",
+      "body": "Your week, sorted by category. Open to see."
+    },
+    {
+      "title": "Fewer surprises ahead",
+      "body": "Upcoming renewals are listed in Subscriptions. Glance at them."
+    },
+    {
+      "title": "Treat yourself",
+      "body": "To knowing where the treats went."
+    },
+    {
+      "title": "The sweet spot",
+      "body": "Enjoy the biryani, know the bill. Chillar does the second part."
+    },
+    {
+      "title": "Money, but make it calm",
+      "body": "No charts screaming at you. Promise."
+    },
+    {
+      "title": "Ping!",
+      "body": "That’s it. That’s the nudge. Open Chillar if you like."
+    },
+    {
+      "title": "All caught up?",
+      "body": "Open Chillar and it reads any new receipts."
+    },
+    {
+      "title": "Receipts in, clarity out",
+      "body": "That’s the Chillar deal. Come see."
+    },
+    {
+      "title": "Zen and the art of spending",
+      "body": "Breathe in. Open Chillar. Breathe out."
+    },
+    {
+      "title": "Low effort, high reward",
+      "body": "Possibly the easiest money habit there is."
+    },
+    {
+      "title": "Your money has a map",
+      "body": "Open the calendar and follow the dots."
+    },
+    {
+      "title": "Spending, simplified",
+      "body": "One screen, one number, one calm minute."
+    },
+    {
+      "title": "This one is short",
+      "body": "Like the time it takes to check Chillar."
+    },
+    {
+      "title": "A nudge, not a nag",
+      "body": "We promise to keep it that way."
+    },
+    {
+      "title": "Pocket-sized insight",
+      "body": "One fact about your spending is waiting inside."
+    },
+    {
+      "title": "Wallet weather",
+      "body": "Today’s forecast: clear skies, if you take a look."
+    },
+    {
+      "title": "Scoreboard check",
+      "body": "This month vs your usual. Who’s winning?"
+    },
+    {
+      "title": "The best deal",
+      "body": "Sometimes it’s the order you skip. Sometimes it isn’t. Chillar helps you tell."
+    },
+    {
+      "title": "Bundle it up",
+      "body": "Fewer orders, fewer fees. Simple maths."
+    },
+    {
+      "title": "Free delivery, is it?",
+      "body": "Only free if you needed the rest of the cart."
+    },
+    {
+      "title": "Hungry shopping",
+      "body": "Is expensive shopping. Snack first, then scroll."
+    },
+    {
+      "title": "Can it wait a day?",
+      "body": "Then it can probably wait a week. Wishlists are free."
+    },
+    {
+      "title": "An apple a day",
+      "body": "Keeps the doctor away. A Chillar a day keeps the surprises away."
+    },
+    {
+      "title": "Hello, CFO",
+      "body": "Chief Financial Officer of your own life. Your briefing is one tap away."
+    },
+    {
+      "title": "Not an ad",
+      "body": "Just Chillar, reminding you it exists. Hi."
+    },
+    {
+      "title": "Here’s a thought",
+      "body": "What would you do with this month’s fees back?"
+    },
+    {
+      "title": "Count your chillar",
+      "body": "Then let Chillar count the rest."
+    },
+    {
+      "title": "Small talk",
+      "body": "How was your day? Your spending says hi."
+    },
+    {
+      "title": "Trivia time",
+      "body": "Which costs more over a year: one subscription or daily delivery fees?"
+    },
+    {
+      "title": "Keep it real",
+      "body": "Real numbers, from real receipts, on your phone."
+    },
+    {
+      "title": "Data, but friendly",
+      "body": "No spreadsheets were harmed in the making of your totals."
+    },
+    {
+      "title": "Quick favour",
+      "body": "Glance at Home. That’s all. Thanks!"
+    },
+    {
+      "title": "A refund might be waiting",
+      "body": "Check Insights for refunds still pending."
+    },
+    {
+      "title": "Renewals ahead",
+      "body": "See what’s due in the coming month."
+    },
+    {
+      "title": "Challenge: four home dinners",
+      "body": "A week with four dinners at home. Try it from Insights."
+    },
+    {
+      "title": "Small steps",
+      "body": "Check, notice, adjust. Repeat tomorrow."
+    },
+    {
+      "title": "Two minutes, tops",
+      "body": "We timed it. Mostly."
+    },
+    {
+      "title": "Feeling curious?",
+      "body": "See what you spent on this day last month."
+    },
+    {
+      "title": "Slow money",
+      "body": "A calm look today keeps rushed decisions away."
+    },
+    {
+      "title": "Tiny audit",
+      "body": "Spot anything that isn’t yours? Mark it, and it’s gone."
+    },
+    {
+      "title": "Ask Chillar",
+      "body": "What did you spend on rides this month? Two taps to know."
+    },
+    {
+      "title": "Bite-sized update",
+      "body": "Like a momo. Small, warm, worth it."
+    },
+    {
+      "title": "Your spending, in one breath",
+      "body": "Open Home and read the big number."
+    },
+    {
+      "title": "Check before checkout",
+      "body": "Today’s total first, cart second."
+    },
+    {
+      "title": "Here for you",
+      "body": "No ads, no loans, no upsell. Just your numbers."
+    },
+    {
+      "title": "A little nudge from Chillar",
+      "body": "Because you asked us to. Nicely."
+    },
+    {
+      "title": "Weekly vibe check",
+      "body": "Spending up, down or steady? One tap to find out."
+    },
+    {
+      "title": "Order history, decoded",
+      "body": "Categories, fees and habits, all in one place."
+    },
+    {
+      "title": "Make it a ritual",
+      "body": "One quick look, whenever suits you."
+    },
+    {
+      "title": "A penny for your thoughts",
+      "body": "Or a quick look at where the pennies went."
+    },
+    {
+      "title": "Know thy fees",
+      "body": "Ancient wisdom. Modern app. Open Chillar."
+    },
+    {
+      "title": "You’ve got this",
+      "body": "Your money, your rules. Chillar just keeps score."
+    },
+    {
+      "title": "Ever wondered?",
+      "body": "Which app gets most of your money? Wonder no more."
+    },
+    {
+      "title": "Daily dose",
+      "body": "Of financial calm. No prescription needed."
+    },
+    {
+      "title": "The friendly ledger",
+      "body": "Your spending, written up neatly. Have a read."
+    },
+    {
+      "title": "Nudge of the day",
+      "body": "Look at one category today. Just one."
+    },
+    {
+      "title": "Smart move incoming",
+      "body": "Opening Chillar counts as one."
+    },
+    {
+      "title": "Bonus round",
+      "body": "Check your subscriptions for one you forgot about."
+    },
+    {
+      "title": "Snack attack audit",
+      "body": "Chips, chocolate, a cold drink. Quick commerce knows. So does Chillar."
+    },
+    {
+      "title": "Little and often",
+      "body": "Small checks, often. That’s the whole trick."
+    },
+    {
+      "title": "One for the road",
+      "body": "Rides add up too. See this month’s."
+    },
+    {
+      "title": "Inbox to insight",
+      "body": "Your receipts become a story. Read a chapter."
+    },
+    {
+      "title": "Shopping spree detector",
+      "body": "Any busy days lately? The calendar will tell."
+    },
+    {
+      "title": "Mini mission",
+      "body": "Find your most expensive day this month. Ready, go."
+    },
+    {
+      "title": "Spending, without the stress",
+      "body": "That’s the whole idea. Pop in."
+    },
+    {
+      "title": "Today’s gentle question",
+      "body": "Did every order feel worth it? Most do. Some don’t. All fine."
+    },
+    {
+      "title": "Platform fee, the quiet one",
+      "body": "It sits just above the total and rarely gets noticed. Chillar notices."
+    },
+    {
+      "title": "Fees are tiny on purpose",
+      "body": "Small enough to ignore, frequent enough to add up. See the sum."
+    },
+    {
+      "title": "The small cart fee",
+      "body": "Bit cheeky, isn’t it? Chillar keeps count so you don’t have to."
+    },
+    {
+      "title": "Fee, fee, fee",
+      "body": "Delivery, platform, packaging. A three-act play. Read the reviews."
+    },
+    {
+      "title": "One fee is nothing",
+      "body": "It’s the whole collection that’s interesting. See it in Fee leak."
+    },
+    {
+      "title": "The fine print, added up",
+      "body": "Every fee from every receipt, in one place."
+    },
+    {
+      "title": "Know the full price",
+      "body": "Item price plus fees is the real price. Chillar shows both."
+    },
+    {
+      "title": "How much was the food?",
+      "body": "Of an order, how much is food and how much is fees? Fun to check."
+    },
+    {
+      "title": "Membership: worth it?",
+      "body": "Delivery memberships pay off only if you order enough. Membership value does the maths."
+    },
+    {
+      "title": "Free delivery has a price",
+      "body": "Sometimes it’s a membership, sometimes a bigger cart. See which you pay."
+    },
+    {
+      "title": "Convenience costs something",
+      "body": "Often worth it. Sometimes not. Chillar helps you tell which."
+    },
+    {
+      "title": "The fee nobody mentions",
+      "body": "It’s in every receipt, though. The Fee leak card found them."
+    },
+    {
+      "title": "Fees love small orders",
+      "body": "Bigger baskets spread them thinner. Just a thought."
+    },
+    {
+      "title": "A rupee here, a rupee there",
+      "body": "That’s how fees like it. Chillar keeps the tally."
+    },
+    {
+      "title": "Read the bill, minus the squint",
+      "body": "No zooming into receipts. Chillar lists every fee for you."
+    },
+    {
+      "title": "Fee leak: a short story",
+      "body": "Many small drops. One surprising bucket. Open to read."
+    },
+    {
+      "title": "Surge, rain, late-night",
+      "body": "Fees have many moods. Chillar spots them all in your receipts."
+    },
+    {
+      "title": "Fees aren’t villains",
+      "body": "Just line items worth seeing now and then. Here’s now."
+    },
+    {
+      "title": "Your receipts have fine print",
+      "body": "Chillar reads it so you don’t have to."
+    },
+    {
+      "title": "Extras conceded",
+      "body": "Wides and no-balls cost runs. Fees are the extras of every order."
+    },
+    {
+      "title": "Delivery fee vs the food",
+      "body": "Sometimes the fee is half the snack. Chillar shows the split."
+    },
+    {
+      "title": "What’s a convenience fee for?",
+      "body": "Good question. Chillar can’t answer that, but it can add them up."
+    },
+    {
+      "title": "The cost of “just this once”",
+      "body": "Every order brings its own fees. Chillar keeps them in one list."
+    },
+    {
+      "title": "Subscriptions renew quietly",
+      "body": "That’s their whole job. Subscriptions shows what’s next."
+    },
+    {
+      "title": "Still watching?",
+      "body": "Streaming apps ask you. Chillar asks about the subscription."
+    },
+    {
+      "title": "The forgotten subscription",
+      "body": "Many people have one. Find yours, or celebrate having none."
+    },
+    {
+      "title": "Free trials grow up",
+      "body": "Trials turn into plans. Subscriptions keeps an eye on them."
+    },
+    {
+      "title": "Price changed? Maybe.",
+      "body": "Chillar flags when a subscription costs more than before."
+    },
+    {
+      "title": "Subscriptions: a headcount",
+      "body": "How many do you think you have? Guess, then check."
+    },
+    {
+      "title": "Autopay is very polite",
+      "body": "It never interrupts. That’s why it’s worth a peek now and then."
+    },
+    {
+      "title": "No recent charge?",
+      "body": "Some subscriptions go quiet. Chillar shows which ones."
+    },
+    {
+      "title": "Small monthly, bigger yearly",
+      "body": "Times twelve is a fun game. Try it on your subscriptions."
+    },
+    {
+      "title": "Does it still spark joy?",
+      "body": "One question per subscription. The list is in Subscriptions."
+    },
+    {
+      "title": "The gym membership effect",
+      "body": "We all pay for things we mean to use. No judgement. Just a list."
+    },
+    {
+      "title": "Who’s on autopay?",
+      "body": "Your Subscriptions page knows. Roll call takes ten seconds."
+    },
+    {
+      "title": "Music, storage, streaming",
+      "body": "Small apps, steady renewals. See them side by side."
+    },
+    {
+      "title": "Subscription dusting",
+      "body": "A quick wipe of the list. Keep the ones you love."
+    },
+    {
+      "title": "What renews next?",
+      "body": "The coming week, listed in Subscriptions. No surprises."
+    },
+    {
+      "title": "Yearly plans are sneaky",
+      "body": "Easy to forget for eleven months. Chillar remembers."
+    },
+    {
+      "title": "Stream, then check",
+      "body": "One episode, one look at Subscriptions. Fair trade."
+    },
+    {
+      "title": "Set and forget",
+      "body": "That’s how subscriptions like it. Chillar prefers set and check."
+    },
+    {
+      "title": "Your subscriptions, in a row",
+      "body": "Every renewal, with its date and price. Easy to scan."
+    },
+    {
+      "title": "Subscriptions are like plants",
+      "body": "A little attention now and then keeps them healthy."
+    },
+    {
+      "title": "The renewal you didn’t expect",
+      "body": "Renewal reminders can warn you before it happens. Turn them on in More."
+    },
+    {
+      "title": "OTT count",
+      "body": "How many streaming apps is the right number? You decide. Chillar counts."
+    },
+    {
+      "title": "Came for milk",
+      "body": "Left with chips, dip and a scented candle. Quick commerce is good at that."
+    },
+    {
+      "title": "The ten-minute basket",
+      "body": "Fast to order, fast to forget. Chillar remembers it all."
+    },
+    {
+      "title": "Dhaniya used to be free",
+      "body": "Ask any sabziwala. Now it comes with a delivery fee."
+    },
+    {
+      "title": "“Just one thing,” they said",
+      "body": "Quick commerce carts have other plans. See how they grow."
+    },
+    {
+      "title": "Small orders, often",
+      "body": "Quick commerce makes it easy. Habits shows how often."
+    },
+    {
+      "title": "The add-on aisle",
+      "body": "Last-minute add-ons are built to be easy. Seeing them is easy too."
+    },
+    {
+      "title": "Midnight ice cream run",
+      "body": "No judgement. Just curious how often it happens. Chillar knows."
+    },
+    {
+      "title": "Kirana, but in an app",
+      "body": "Same chips, now with a fee. See what quick commerce adds."
+    },
+    {
+      "title": "Groceries in minutes",
+      "body": "Totals in seconds. That’s Chillar’s half of the deal."
+    },
+    {
+      "title": "Forgot the bread again?",
+      "body": "Happens to everyone. Quick commerce loves those moments."
+    },
+    {
+      "title": "The impulse aisle moved",
+      "body": "It used to be at the billing counter. Now it’s in your pocket."
+    },
+    {
+      "title": "Free delivery above a minimum",
+      "body": "That little “add a bit more” nudge. Chillar sees how often it works."
+    },
+    {
+      "title": "Party at home?",
+      "body": "Snacks arrived in minutes. So did the receipts. Have a look."
+    },
+    {
+      "title": "Fridge empty, phone full",
+      "body": "Of quick commerce receipts, maybe. Chillar can tell."
+    },
+    {
+      "title": "Faster than Maggi",
+      "body": "Some deliveries now beat two-minute noodles. Chillar is quicker still."
+    },
+    {
+      "title": "The one-item order",
+      "body": "Possible. Popular. Comes with fees. See how many you’ve had."
+    },
+    {
+      "title": "Dark stores, bright receipts",
+      "body": "Every quick order leaves a receipt. Chillar reads them all."
+    },
+    {
+      "title": "Quick commerce, slow look",
+      "body": "They’re fast. You can be slow. Take a minute in Chillar."
+    },
+    {
+      "title": "Cart, but make it calm",
+      "body": "No timer, no countdown. Just your spending, at your pace."
+    },
+    {
+      "title": "After-midnight orders",
+      "body": "The calendar shows when they happen. Owls welcome."
+    },
+    {
+      "title": "Night owl menu",
+      "body": "Noodles after midnight hit different. See how often they hit."
+    },
+    {
+      "title": "Everything sounds good at two am",
+      "body": "Especially food. Habits shows your late hours."
+    },
+    {
+      "title": "Late-night cravings are valid",
+      "body": "So is knowing how often they win. Habits has the answer."
+    },
+    {
+      "title": "Owls of India, unite",
+      "body": "Your late orders are in Habits. No sermon attached."
+    },
+    {
+      "title": "Late-night logic",
+      "body": "One more episode, one more order. Habits shows the pattern."
+    },
+    {
+      "title": "The hour that orders most",
+      "body": "Every phone has one. Find yours in Habits."
+    },
+    {
+      "title": "Midnight biryani club",
+      "body": "Members get great biryani and a receipt. Chillar has the receipts."
+    },
+    {
+      "title": "Night shift snacks",
+      "body": "Late hours, late orders. Fair enough. See how often in Habits."
+    },
+    {
+      "title": "Dinner, delivered?",
+      "body": "No lecture. Habits just shows how often dinner arrives by bike."
+    },
+    {
+      "title": "Hungry hours",
+      "body": "Every week has a few. Habits shows which hours order most."
+    },
+    {
+      "title": "UPI is magic",
+      "body": "Scan, tap, done. Almost too easy to remember. Chillar remembers."
+    },
+    {
+      "title": "Money you never touched",
+      "body": "Digital payments don’t feel like spending. Receipts tell the story."
+    },
+    {
+      "title": "Remember counting notes?",
+      "body": "Cash made spending feel real. Chillar brings a bit of that back."
+    },
+    {
+      "title": "Tap, beep, gone",
+      "body": "Paying takes a second. Noticing takes a moment. Here’s the moment."
+    },
+    {
+      "title": "Spending without a sound",
+      "body": "No coins clinking, no notes changing hands. Just receipts. Read them."
+    },
+    {
+      "title": "A PIN and it’s paid",
+      "body": "Easy to pay, easy to forget. Two minutes to see where it went."
+    },
+    {
+      "title": "Cashless, still mindful",
+      "body": "Keep the convenience, add a little awareness."
+    },
+    {
+      "title": "Paying used to sting",
+      "body": "Cash made it hurt a bit. Apps made it painless. Chillar makes it visible."
+    },
+    {
+      "title": "Four ways to pay",
+      "body": "Card, UPI, wallet, cash. One place to see them."
+    },
+    {
+      "title": "Your money got faster",
+      "body": "Payments take a second. A look takes two minutes. Good trade."
+    },
+    {
+      "title": "Invisible money, made visible",
+      "body": "That’s the whole trick. Pop in."
+    },
+    {
+      "title": "Coins used to jingle",
+      "body": "Now they just disappear. Chillar counts them anyway."
+    },
+    {
+      "title": "The wallet got lighter",
+      "body": "Mostly because nobody carries one. Chillar keeps track instead."
+    },
+    {
+      "title": "Scan, pay, repeat",
+      "body": "QR codes made paying effortless. Seeing it all is effortless too."
+    },
+    {
+      "title": "Frictionless, but not invisible",
+      "body": "Payments got smooth. Chillar adds back the view, not the friction."
+    },
+    {
+      "title": "Where did it go?",
+      "body": "Digital money doesn’t leave a bulge in your pocket. It leaves receipts."
+    },
+    {
+      "title": "The ping after paying",
+      "body": "Bank alerts fly by. Chillar collects them into one calm page."
+    },
+    {
+      "title": "Small amounts, big months",
+      "body": "Nobody notices one small order. Thirty of them make a story."
+    },
+    {
+      "title": "Drip, drip, drip",
+      "body": "Small spends are like a leaky tap. Chillar is the bucket."
+    },
+    {
+      "title": "Boond boond se sagar",
+      "body": "Drop by drop, an ocean. Works for spends too. See your drops."
+    },
+    {
+      "title": "Small but mighty",
+      "body": "Tiny orders don’t feel like spending. Together they’re a category."
+    },
+    {
+      "title": "Chai math",
+      "body": "One chai is small. A chai a day is a monthly number. Fun to see."
+    },
+    {
+      "title": "Little leaks, no panic",
+      "body": "Nothing to fix. Just something to notice."
+    },
+    {
+      "title": "Small change, literally",
+      "body": "That’s what chillar means. It adds up, like all good gossip."
+    },
+    {
+      "title": "The little ones count too",
+      "body": "Chillar counts every rupee, not just the big ones."
+    },
+    {
+      "title": "Tiny taps",
+      "body": "Each one feels like nothing. Chillar shows what they feel like together."
+    },
+    {
+      "title": "The ₹-sized habit",
+      "body": "Small, regular spends are the quiet ones. Habits shows them."
+    },
+    {
+      "title": "Small orders, big picture",
+      "body": "Habits counts the little ones. The number might be fun."
+    },
+    {
+      "title": "It’s never one big thing",
+      "body": "Usually it’s lots of small things. Chillar shows the lot."
+    },
+    {
+      "title": "Pocket money, grown up",
+      "body": "Small spends were easy to track as a kid. Chillar makes it easy again."
+    },
+    {
+      "title": "The latte factor, desi edition",
+      "body": "Swap latte for chai. The idea stays: small things add up."
+    },
+    {
+      "title": "Spare change, spared?",
+      "body": "Chillar can’t save it for you, but it can show you where it goes."
+    },
+    {
+      "title": "Knowing is the hard part",
+      "body": "Chillar does most of it. Your bit takes a minute."
+    },
+    {
+      "title": "Awareness beats willpower",
+      "body": "No resolutions needed. Just a look now and then."
+    },
+    {
+      "title": "Every look counts",
+      "body": "Even a ten-second one. Especially a ten-second one."
+    },
+    {
+      "title": "Not perfect, just aware",
+      "body": "That’s the goal. Chillar does the counting."
+    },
+    {
+      "title": "Good with money?",
+      "body": "It starts with knowing where it goes. That part’s easy here."
+    },
+    {
+      "title": "A look is a win",
+      "body": "No targets, no scores. Opening Chillar is the whole win."
+    },
+    {
+      "title": "Clarity is a treat too",
+      "body": "Cheaper than dessert. Open Chillar."
+    },
+    {
+      "title": "No resolution needed",
+      "body": "Just curiosity. Chillar answers the rest."
+    },
+    {
+      "title": "Money confidence",
+      "body": "It comes from knowing, not guessing."
+    },
+    {
+      "title": "You’re the main character",
+      "body": "Your money is the supporting cast. Check on them."
+    },
+    {
+      "title": "Feel good about money",
+      "body": "Not because of a number. Because you know the number."
+    },
+    {
+      "title": "Curiosity is a money skill",
+      "body": "Wondering where it went is step one. Chillar is step two."
+    },
+    {
+      "title": "Noticing is enough",
+      "body": "No changes required. Just a look, whenever you like."
+    },
+    {
+      "title": "Calm beats perfect",
+      "body": "No streaks, no scores, no red. Just your spending, explained."
+    },
+    {
+      "title": "Know, then decide",
+      "body": "Chillar does the knowing part. Deciding is all yours."
+    },
+    {
+      "title": "Spending is allowed",
+      "body": "Seriously. Chillar just helps you see it."
+    },
+    {
+      "title": "Enjoy it, then see it",
+      "body": "Spend on what you love. Chillar keeps the receipts."
+    },
+    {
+      "title": "Information, not judgement",
+      "body": "That’s the Chillar promise. Pop in."
+    },
+    {
+      "title": "Guess before you look",
+      "body": "What’s your biggest category this month? Guess, then check."
+    },
+    {
+      "title": "Fees or subscriptions?",
+      "body": "Which costs more? Make a guess. Then let Chillar settle it."
+    },
+    {
+      "title": "Quiz time",
+      "body": "Which category grew most this month? Insights knows."
+    },
+    {
+      "title": "Weekday or weekend?",
+      "body": "When do you spend more? The calendar has a clear answer."
+    },
+    {
+      "title": "Food or shopping?",
+      "body": "Which one wins your month? Pick a side, then peek."
+    },
+    {
+      "title": "Rides or deliveries?",
+      "body": "Moving yourself or having things moved to you. Which costs more?"
+    },
+    {
+      "title": "How many apps got paid?",
+      "body": "Top platforms has the count. It’s usually more than people guess."
+    },
+    {
+      "title": "Today’s riddle",
+      "body": "Small, frequent, and in nearly every order. Answer: fees."
+    },
+    {
+      "title": "Spot the odd one out",
+      "body": "Scroll Activity. There’s always one payment that makes you go “oh, that”."
+    },
+    {
+      "title": "Calmest day, busiest day",
+      "body": "Both are in the calendar, side by side."
+    },
+    {
+      "title": "Is there a pattern?",
+      "body": "Paydays? Weekends? The calendar shows when spending clusters."
+    },
+    {
+      "title": "The ten-second test",
+      "body": "Can you name your top three categories? See how close you get."
+    },
+    {
+      "title": "Treasure hunt",
+      "body": "Somewhere in Insights there might be a refund you forgot about."
+    },
+    {
+      "title": "Hmm, interesting",
+      "body": "Most months have one category that grows. Which was it this time?"
+    },
+    {
+      "title": "What’s in a month?",
+      "body": "Thirty-ish days, one tidy summary. Have a read."
+    },
+    {
+      "title": "Guess the hour",
+      "body": "When do most of your orders happen? Habits has the answer."
+    },
+    {
+      "title": "Pick a number",
+      "body": "Guess this month’s total fees. Then check. No prizes, just bragging rights."
+    },
+    {
+      "title": "The most-used app",
+      "body": "Not the one you open most. The one you pay most. Find out."
+    },
+    {
+      "title": "A question for you",
+      "body": "If this month had a headline, what would it be? Chillar has clues."
+    },
+    {
+      "title": "Same as last month?",
+      "body": "Or a little different? Compare in one tap."
+    },
+    {
+      "title": "Chai break, money break",
+      "body": "Both take five minutes. Both make you feel better."
+    },
+    {
+      "title": "Cutting chai, full picture",
+      "body": "Half a glass of chai, a whole view of your money."
+    },
+    {
+      "title": "Chai pe charcha",
+      "body": "Today’s topic: where the money went. Chillar has the notes."
+    },
+    {
+      "title": "Meter down?",
+      "body": "Autos have meters. Your spending has Chillar."
+    },
+    {
+      "title": "Bhaiya, meter se chalo",
+      "body": "Every ride deserves a meter. Your spending already has one."
+    },
+    {
+      "title": "Run rate check",
+      "body": "Like a good chase, spending is calmer when you watch the run rate."
+    },
+    {
+      "title": "Third umpire review",
+      "body": "Not sure about a payment? Replay it in Activity."
+    },
+    {
+      "title": "Strategic timeout",
+      "body": "Two minutes, like the cricket ones. Spend it on your money."
+    },
+    {
+      "title": "Net practice",
+      "body": "Small regular checks, like net practice. Match day gets easier."
+    },
+    {
+      "title": "Howzat!",
+      "body": "Appeal to the third umpire: was that fee really needed? Check the replay."
+    },
+    {
+      "title": "Free hit",
+      "body": "No pressure on this ball. Take a swing at your spending, if you like."
+    },
+    {
+      "title": "Monsoon logic",
+      "body": "Rain outside, chai inside, delivery app open. Classic. Chillar keeps score."
+    },
+    {
+      "title": "Mummy’s rule",
+      "body": "Know where every rupee goes. She was early. Chillar is catching up."
+    },
+    {
+      "title": "“Itna kharcha kahan hua?”",
+      "body": "Every Indian parent’s favourite question. Chillar has the answer, minus the lecture."
+    },
+    {
+      "title": "Ghar ka khana",
+      "body": "Delivery fee: zero. Packaging fee: zero. Unbeatable pricing."
+    },
+    {
+      "title": "The steel dabba approach",
+      "body": "Mothers kept coins in a dabba. Chillar keeps receipts. Same idea."
+    },
+    {
+      "title": "Haggling, the lost art",
+      "body": "Our parents bargained for every rupee. Now fees slip by unseen. Chillar sees them."
+    },
+    {
+      "title": "Paise ped pe nahi ugte",
+      "body": "Every Indian parent said it. Chillar shows where the leaves went."
+    },
+    {
+      "title": "Festivals are for spending",
+      "body": "Gifts, sweets, new clothes. That’s tradition. Chillar just keeps count."
+    },
+    {
+      "title": "Mithai math",
+      "body": "Sweets are for sharing. Receipts are for checking. Both are good."
+    },
+    {
+      "title": "Sale! Sale! Sale!",
+      "body": "Sales are built to feel urgent. Your receipts aren’t in a hurry."
+    },
+    {
+      "title": "Picture abhi baaki hai",
+      "body": "The month isn’t over. See how the story is going."
+    },
+    {
+      "title": "Kitne aadmi the?",
+      "body": "Kitne orders the, more like. Chillar has the count."
+    },
+    {
+      "title": "Jugaad, but for money",
+      "body": "No hacks needed. Just a look at where it goes."
+    },
+    {
+      "title": "The sabziwala shows the scale",
+      "body": "Apps tuck fees into the bill. Chillar puts them on the scale."
+    },
+    {
+      "title": "Your own khata",
+      "body": "The kirana uncle kept one for you. Now you have your own."
+    },
+    {
+      "title": "Hisaab-kitaab time",
+      "body": "The classic Indian ritual, now in an app. Two minutes."
+    },
+    {
+      "title": "Gullak energy",
+      "body": "Remember the piggy bank? Chillar is its grown-up cousin. Give it a shake."
+    },
+    {
+      "title": "The pani puri principle",
+      "body": "One more always sounds reasonable. Chillar counts the plates."
+    },
+    {
+      "title": "Nukkad wisdom",
+      "body": "The chai stall fixes the economy. Chillar sticks to your receipts."
+    },
+    {
+      "title": "Remember the cloth jhola?",
+      "body": "Every buy felt heavy then. Now it’s weightless. Chillar keeps it visible."
+    },
+    {
+      "title": "Dadi’s purse had answers",
+      "body": "Coins, receipts, and a story for each. Chillar has the receipts part."
+    },
+    {
+      "title": "Bargain hunter’s companion",
+      "body": "You found the deal. Chillar finds the fees that came with it."
+    },
+    {
+      "title": "Dhaba vs delivery",
+      "body": "Same dal, different fees. Chillar shows the delivery side."
+    },
+    {
+      "title": "Monsoon cravings",
+      "body": "Pakoras sound better when it rains. Delivery apps know it too."
+    },
+    {
+      "title": "Weddings and wallets",
+      "body": "Gifts, outfits, travel. Generous times. Chillar keeps the tally."
+    },
+    {
+      "title": "Tiffin time",
+      "body": "Home-packed lunches, zero fees. A fun one to count in Chillar."
+    },
+    {
+      "title": "Thoda thoda, bahut sara",
+      "body": "A little, a little, a lot. Chillar shows the bahut sara."
+    },
+    {
+      "title": "A week on one thali",
+      "body": "A whole week of spending, served on one plate. Insights."
+    },
+    {
+      "title": "The kirana slip",
+      "body": "Remember those long paper receipts? Chillar is the tidy version."
+    },
+    {
+      "title": "Your receipts stay home",
+      "body": "Chillar reads them on your phone. Nothing leaves it."
+    },
+    {
+      "title": "No bank login needed",
+      "body": "Just your own receipts, read on your phone."
+    },
+    {
+      "title": "Read-only, always",
+      "body": "Chillar can’t send, delete or change your mail. It just reads."
+    },
+    {
+      "title": "No account, no servers",
+      "body": "Your spending lives on your phone, encrypted."
+    },
+    {
+      "title": "We don’t know your numbers",
+      "body": "Honestly. That’s why this nudge is so vague. Open to see them."
+    },
+    {
+      "title": "This nudge is clueless",
+      "body": "It knows nothing about your spending. The app does. Peek inside."
+    },
+    {
+      "title": "Pause any time",
+      "body": "You can pause reading or delete everything from More."
+    },
+    {
+      "title": "Your data, your call",
+      "body": "Export a CSV or erase it all from More. No forms, no emails."
+    },
+    {
+      "title": "Between you and your phone",
+      "body": "That’s where your spending stays. Chillar just organises it."
+    },
+    {
+      "title": "Nobody’s watching",
+      "body": "Not us, not advertisers. Just you and your numbers."
+    },
+    {
+      "title": "Busy days stand out",
+      "body": "The calendar shows them at a glance. Have a look."
+    },
+    {
+      "title": "Need a spreadsheet?",
+      "body": "Export your spending as a CSV from More."
+    },
+    {
+      "title": "Receipts in two inboxes?",
+      "body": "Chillar can read more than one Gmail. Add it from More."
+    },
+    {
+      "title": "Fewer nudges, please?",
+      "body": "You can change the time or turn these off in More. We won’t sulk."
+    },
+    {
+      "title": "Morning or evening?",
+      "body": "Pick when these nudges arrive, in More."
+    },
+    {
+      "title": "Wrong category?",
+      "body": "Tap a payment to change it. Your labels, your way."
+    },
+    {
+      "title": "One quick order a week",
+      "body": "A gentle challenge for quick commerce fans. It’s in Insights."
+    },
+    {
+      "title": "Challenges, no pressure",
+      "body": "Pick one in Insights, stop whenever you want."
+    },
+    {
+      "title": "The Fee leak card",
+      "body": "Every delivery, platform and packaging fee, added up."
+    },
+    {
+      "title": "Habits, explained",
+      "body": "Busiest days, busiest hours, small orders. All in Insights."
+    },
+    {
+      "title": "Worth a look",
+      "body": "Home has a row of cards with things worth seeing. Swipe through."
+    },
+    {
+      "title": "Know a payment Chillar missed?",
+      "body": "Add it by hand. Cash counts too."
+    },
+    {
+      "title": "Breaking news",
+      "body": "Local person finds out where money went. Full story inside."
+    },
+    {
+      "title": "Your receipts formed a union",
+      "body": "Their demand: to be read. Chillar handled it."
+    },
+    {
+      "title": "Money haiku",
+      "body": "Small fees fall like rain / quietly, one by one / Chillar counts each drop"
+    },
+    {
+      "title": "Not a sales pitch",
+      "body": "We have nothing to sell you. Isn’t that nice?"
+    },
+    {
+      "title": "Knock knock",
+      "body": "Who’s there? Fees. Fees who? Fees adding up quietly. Have a look."
+    },
+    {
+      "title": "Plot summary",
+      "body": "Money came. Money went. Chillar knows where."
+    },
+    {
+      "title": "Movie trailer voice",
+      "body": "In a world of small fees, one app keeps count. Chillar."
+    },
+    {
+      "title": "The receipts are in",
+      "body": "And they have opinions. Just kidding, only numbers."
+    },
+    {
+      "title": "Brought to you by no one",
+      "body": "This nudge has no sponsor. Just Chillar saying hi."
+    },
+    {
+      "title": "Like a good friend",
+      "body": "Chillar remembers everything and judges nothing."
+    },
+    {
+      "title": "Dear diary",
+      "body": "Today I wondered where my money went. Then I opened Chillar."
+    },
+    {
+      "title": "Accountant, but chill",
+      "body": "No jargon, no fees, no appointment needed."
+    },
+    {
+      "title": "Hello from the other side",
+      "body": "Of your inbox. Chillar sorts it out when you open it."
+    },
+    {
+      "title": "Notification of the day",
+      "body": "Winner: this one. Prize: two calm minutes in Chillar."
+    },
+    {
+      "title": "A poem, of sorts",
+      "body": "Roses are red, fees can be sly, Chillar adds them up, so you know why."
+    },
+    {
+      "title": "Instructions unclear?",
+      "body": "Step one: open Chillar. Step two: there is no step two."
+    },
+    {
+      "title": "Just checking in",
+      "body": "Not checking up. There’s a difference."
+    },
+    {
+      "title": "Fun fact",
+      "body": "“Chillar” means small change. We named the app after what adds up."
+    },
+    {
+      "title": "The no-pressure zone",
+      "body": "You’ve entered it. Open Chillar or don’t. Both are fine."
+    },
+    {
+      "title": "Gossip from your receipts",
+      "body": "Fees were spotted hanging out with small orders. Get the full story."
+    },
+    {
+      "title": "Pop in whenever",
+      "body": "There’s no right time. This is just a reminder that Chillar’s here."
+    },
+    {
+      "title": "Light reading",
+      "body": "Your spending, in plain words and small numbers."
+    },
+    {
+      "title": "One look, then life",
+      "body": "Check, close, carry on with your day."
+    },
+    {
+      "title": "No homework today",
+      "body": "Chillar did it. You just glance."
+    },
+    {
+      "title": "A breather for your budget",
+      "body": "A minute to look, no pressure to change a thing."
+    },
+    {
+      "title": "Glance and go",
+      "body": "Home shows the month at a glance. That’s enough."
+    },
+    {
+      "title": "Easy does it",
+      "body": "One category, one minute. That’s a perfect check-in."
+    },
+    {
+      "title": "Calm is a feature",
+      "body": "Chillar was built to inform, not alarm."
+    },
+    {
+      "title": "Quick peek, no pressure",
+      "body": "Opening Chillar is optional. Knowing feels nice, though."
+    },
+    {
+      "title": "Receipts, decoded",
+      "body": "Every email receipt, turned into one clear picture."
+    },
+    {
+      "title": "Your inbox knows a lot",
+      "body": "Chillar turns that into answers."
+    },
+    {
+      "title": "Chillar, at your service",
+      "body": "Counting the chillar since you installed it."
+    },
+    {
+      "title": "What Chillar does",
+      "body": "Reads receipts, adds them up, shows the story. That’s it."
+    },
+    {
+      "title": "Made for Indian receipts",
+      "body": "Rupees, UPI, delivery fees, all understood."
+    },
+    {
+      "title": "Every rupee, accounted for",
+      "body": "Well, every one with a receipt. Cash you can add yourself."
+    }
   ]
 }

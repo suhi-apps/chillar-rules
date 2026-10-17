@@ -75,3 +75,23 @@ Nothing reliable was found for Blinkit, Zepto's own receipts (some arrive as a R
 No email sample could be found for these, so they are read only if their wording happens to match another bank's: American Express India (sender known, body not), AU Small Finance Bank, Standard Chartered, Bank of Baroda accounts, PNB, IDBI, DBS, Paytm Payments Bank, Airtel Payments Bank, Fi. SBI savings accounts have only the debit-card table. ATM withdrawals, foreign-currency card spends and wallet top-ups are deliberately not counted.
 
 No reliable receipt sample was found for most subscription services (Prime Video, ZEE5, Sony LIV, Audible, YouTube Premium, Microsoft 365 and others), for Vi, BSNL, ACT, Tata Play and DTH operators, for electricity, gas and water payment receipts, for FASTag and insurers, or for MobiKwik, Freecharge, Simpl and LazyPay. They rely on the general total-row reading and on bank alerts.
+
+## October 2026 additions (rules version 8)
+
+Bank layouts were added from new sources. The status is recorded per layout in `build.py` and the samples are in `__tests__/fixtures/bank-alerts-2026-10.json`.
+
+- **Confirmed from real emails:** Bank of Maharashtra UPI, Union Bank debit list, and three slice bank emails. Sources: akhilnarang/bank-email-parser (`parsers/bom.py`, `parsers/uboi.py`, `parsers/slice.py`, `tests/test_new_parsers.py`).
+- **Real SMS wording, unconfirmed for email:** Amex India, PNB, Bank of Baroda, IDBI, Karnataka, SBI UPI, Indian Bank, South Indian, Federal and Scapia, AU, Bank of India, IPPB, Standard Chartered and Canara. Source: ratnesh-maurya/PennyTrace `fixtures/sms`. When a tester's log shows a real email that differs, correct the layout from it.
+- **Reconstructed formats:** the Axis credit-card sentence, Kotak credit card and PayU receipts. Source: androdev700/money-tracker `tests/fixtures/alerts.ts`.
+- **Fixes:** the Federal rule no longer reads "using your IDFC FIRST Bank Debit Card" as part of the payee, and "is spent on" (BOBCARD) reads with the SBI Card rule.
+- **New ignore patterns:** advance notices ("will be debited"), mandate set-up, collect requests, Kotak's "Transaction Successful" credit, slice "initiated", ATM withdrawals and "declined for". Sources: medhruv7/Expense-Manager real-email tests and nousonworktechnologies/kredme-review tests.
+- **Bank domains:** registered `.bank.in` domains (CCAgentOrg/bankin-scorecard) and older domains the banks still mail from (pratik-devx/burnrate Gmail filters, and the banks' own sites).
+
+New platforms, each added only where a real-inbox source shows the sender:
+- Travel and stays: Goibibo, ixigo, Agoda, Booking.com, OYO.
+- Other platforms: Zoomcar, Lenskart, Decathlon, Practo, cult.fit, EatClub (Box8), FreshToHome.
+- Google One, plus YouTube Premium and Google One split out of Google Payments receipts.
+
+Evidence came from exported Gmail filters and sender lists from real inboxes (souravkhoso1/gmail-api-webserver, prabh8331/Python_projects, PranjalAgni/clean-gmail), KDE/kitinerary extractors, and the platforms' own help pages (cult.fit says it emails an invoice for every purchase). Receipt subject and total wording for these platforms is not yet confirmed. Watch testers' reading logs for them.
+
+Platforms checked that send no receipt email, so adding them gains nothing: LinkedIn Premium, Spotify (after the first payment), Google Pay, Blinkit, Zepto, Apollo 24|7 (invoices in the app or on WhatsApp), and apps billed through Google Play or Apple.
